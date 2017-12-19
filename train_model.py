@@ -5,11 +5,13 @@ import numpy as np
 from imutils import paths
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers.convolutional import Conv2D, MaxPooling2D
-from keras.layers.core import Flatten, Dense
+#from keras.models import Sequential
+#from keras.layers.convolutional import Conv2D, MaxPooling2D
+#from keras.layers.core import Flatten, Dense
+from tensorflow.contrib.keras.python.keras.models import Sequential
+from tensorflow.contrib.keras.python.keras.layers.convolutional import Conv2D, MaxPooling2D
+from tensorflow.contrib.keras.python.keras.layers.core import Flatten, Dense
 from helpers import resize_to_fit
-
 
 LETTER_IMAGES_FOLDER = "extracted_letter_images"
 MODEL_FILENAME = "captcha_model.hdf5"
